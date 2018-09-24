@@ -7,3 +7,94 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+/*Use modularscale perfect fourth 3:4
+*/
+.main-content
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  ". . ."
+  "sidebar content1 content2"
+  "sidebar content3 me";
+}
+.main-content section
+{
+  background-color: #e5dbff;
+  border: 1px solid #d0bfff;
+  padding: 10px;
+  border-radius: 5px;
+}
+#header
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "name1 name1 name2";
+}
+#header section
+{
+  background-color: #e5dbff;
+  border: 1px solid #d0bfff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.name
+{
+  grid-area: name1;
+}
+.name2
+{
+  grid-area: name2;
+}
+
+footer
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "foot . . ";
+
+}
+footer section
+{
+  background-color: #e5dbff;
+  border: 1px solid #d0bfff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#foot
+{
+  grid-area: foot
+}
+
+#sidebar
+{
+  grid-area: sidebar;
+}
+#dogs
+{
+  grid-area: content1;
+}
+#library
+{
+  grid-area: content2;
+}
+#fave-quotes
+{
+  grid-area: content3;
+}
+#photo-space
+{
+  grid-area: me;
+}
