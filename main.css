@@ -8,23 +8,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site CSS code below */
 /*Use modularscale perfect fourth 3:4
+https://www.modularscale.com/?18&px&1.333
+1em=18px
 */
 
 /*Grid code for header*/
 #header
 {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
   "name1 name1 name2";
-}
-#header section
-{
   background-color: #e5dbff;
-  border: 1px solid #d0bfff;
-  padding: 10px;
-  border-radius: 5px;
+  border: .2em solid #d0bfff;
+  padding: 2%;
 }
 .name
 {
@@ -39,10 +39,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: .2em;
+  grid-row-gap: .2em;
   grid-template-areas:
   ". . ."
   "sidebar content1 content2"
@@ -51,9 +51,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .main-content section
 {
   background-color: #e5dbff;
-  border: 1px solid #d0bfff;
-  padding: 10px;
-  border-radius: 5px;
+  border: .2em solid #d0bfff;
+  padding: 2%;
 }
 #sidebar
 {
@@ -83,21 +82,35 @@ footer
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: .2em;
   grid-template-areas:
+  ". . ."
   "foot . . ";
 
 }
 footer section
 {
   background-color: #e5dbff;
-  border: 1px solid #d0bfff;
-  padding: 10px;
-  border-radius: 5px;
+  border: .2em solid #d0bfff;
+  padding: 5%;
 }
 
 #foot
 {
   grid-area: foot
 }
+/*background code*/
+/*html
+{
+  background-image: url("abstract-twirl-background.jpg");
+}*/
 /*Style code*/
+h1
+{
+  font-size: 5.61em;
+  letter-spacing: .25em;
+}
+.name2
+{
+  font-size: 3.157em;
+}
