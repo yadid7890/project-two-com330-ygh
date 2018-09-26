@@ -113,4 +113,20 @@ h1
 .name2
 {
   font-size: 3.157em;
+  letter-spacing: .05em;
+}
+h2
+{
+  font-size: 1.777em;
+  padding: 5%;
+}
+p
+{
+  font-size: 1em;
+  margin-left: 10%
+
+}
+footer
+{
+  font-size: .563em;
 }
