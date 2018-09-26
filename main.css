@@ -23,7 +23,7 @@ https://www.modularscale.com/?18&px&1.333
   grid-template-areas:
   "name1 name1 name2";
   background-color: #e5dbff;
-  border: .2em solid #d0bfff;
+  border: .2em dotted #d0bfff;
   padding: 2%;
 }
 .name
@@ -51,7 +51,7 @@ https://www.modularscale.com/?18&px&1.333
 .main-content section
 {
   background-color: #e5dbff;
-  border: .2em solid #d0bfff;
+  border: .2em dotted #d0bfff;
   padding: 2%;
 }
 #sidebar
@@ -120,11 +120,16 @@ h2
   font-size: 1.777em;
   padding: 5%;
 }
-p
+p, ul
 {
   font-size: 1em;
-  margin-left: 10%
-
+  margin-left: 10%;
+  line-height: 1.222em;
+}
+ul
+{
+  list-style: square;
+  margin-left: 20%
 }
 footer
 {
