@@ -21,7 +21,7 @@ https://www.modularscale.com/?18&px&1.333
 /*Grid code for header*/
 #header
 {
-  background-color: #000000;
+  background-color: rgba(10, 10, 10, 0.5);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -47,7 +47,7 @@ h1, #header p
 /*Grid code for menu*/
 #navigation
 {
-  background-color: lavender;
+  background-color: rgba(71, 158, 53, 0.5); /* BACKGROUND COLOR CODE */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0;
@@ -57,7 +57,7 @@ h1, #header p
   margin-left: 8%;
   margin-right: 8%;
   text-align: center;
-  font-size:
+  font-size: 1em;
 }
 
 a[href="#about-box"]
@@ -148,39 +148,47 @@ a:active
 }
 #about-box
 {
-background-color: #cc0052;
+background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
 grid-area: about-grid;
 }
 #edu-box
 {
+  background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: edu-grid;
 }
 #skill-box
 {
+  background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: skill-grid;
+}
+#fave-quotes-box
+{
+  background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
+  grid-area: quotes-grid;
 }
 #hobbies-box
 {
+  background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: hobbies-grid;
 }
 #dogs-box
 {
+  background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: dogs-grid;
 }
 #library-box
 {
+  background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: library-grid;
-}
-#fave-quotes-box
-{
-  grid-area: quotes-grid;
 }
 #speech-box
 {
+  background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: speech-grid;
 }
 #photo-space-box
 {
+  background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: photo-grid;
 }
 
@@ -199,7 +207,7 @@ footer
 }
 footer section
 {
-  background-color: gold;
+  background-color: rgba(207, 156, 2, 0.5); /* BACKGROUND COLOR CODE */
   padding: 5%;
 }
 
@@ -210,7 +218,7 @@ footer section
 /*background code*/
 html
 {
-  background-image: url("9.jpg");
+  background-image: url("9.jpg"); /*Code for HTML*/
 }
 
 /*Style code*/
