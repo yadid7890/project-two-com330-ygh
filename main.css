@@ -12,6 +12,7 @@ https://www.modularscale.com/?18&px&1.333
 1em=18px
 */
 /*Base Styles (element selectors; color; typography--> thats it)*/
+
 /*Layout: ID selectors; width/height; position; flexbox, grid-->the big major styles*/
 /*Module/Modular sections (class or descendent selectors; repeating specific styles) */
 /*State (repeat the structure above; media queries; javascript-dependent styles) */
@@ -21,7 +22,6 @@ https://www.modularscale.com/?18&px&1.333
 #header
 {
   background-color: #000000;
-  border: .2em dotted #d0bfff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -43,6 +43,84 @@ h1, #header p
 .name2
 {
   grid-area: name2;
+}
+/*Grid code for menu*/
+#navigation
+{
+  background-color: lavender;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-template-areas:
+  "about-link edu-link skill-link quote-link"
+  "hobbies-link dogs-link library-link photo-link";
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: center;
+  font-size:
+}
+
+a[href="#about-box"]
+{
+  grid-area: about-link;
+}
+a[href="#edu-box"]
+{
+  grid-area: edu-link;
+}
+a[href="#skill-box"]
+{
+  grid-area: skill-link;
+}
+a[href="#fave-quotes-box"]
+{
+  grid-area: quote-link;
+}
+a[href="#hobbies-box"]
+{
+  grid-area: hobbies-link;
+}
+a[href="#dogs-box"]
+{
+  grid-area: dogs-link;
+}
+a[href="#library-box"]
+{
+  grid-area: library-link;
+}
+a[href="#photo-space-box"]
+{
+  grid-area: photo-link;
+}
+/* code for page links*/
+a
+{
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+a:link
+{
+  color: black;
+}
+a:visited
+{
+  color: black;
+}
+a:focus
+{
+  border-bottom: 1px solid;
+  background: #BAE498;
+}
+a:hover
+{
+  border-bottom: 1px solid;
+  background: #CDFEAA;
+}
+a:active
+{
+  background: #265301;
+  color: #CDFEAA;
 }
 /*Grid code for main content*/
 .main-content
@@ -66,7 +144,6 @@ h1, #header p
 .main-content section
 {
   background-image: url("");
-  border: .2em dotted #d0bfff;
   padding: 2%;
 }
 #about-box
@@ -122,8 +199,7 @@ footer
 }
 footer section
 {
-  background-color: #e5dbff;
-  border: .2em solid #d0bfff;
+  background-color: gold;
   padding: 5%;
 }
 
@@ -170,5 +246,5 @@ footer
 }
 img
 {
-  max-width: 50%;
+  max-width: 40%;
 }
