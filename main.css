@@ -11,20 +11,25 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 https://www.modularscale.com/?18&px&1.333
 1em=18px
 */
+/*Base Styles (element selectors; color; typography--> thats it)*/
+/*Layout: ID selectors; width/height; position; flexbox, grid-->the big major styles*/
+/*Module/Modular sections (class or descendent selectors; repeating specific styles) */
+/*State (repeat the structure above; media queries; javascript-dependent styles) */
+
 
 /*Grid code for header*/
 #header
 {
-  margin-left: 8%;
-  margin-right: 8%;
+  background-image: url("9.jpg");
+  border: .2em dotted #d0bfff;
   display: grid;
-  list-style: none;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
   "name1 name1 name1"
   "name2 name2 name2";
-  background-color: #e5dbff;
-  border: .2em dotted #d0bfff;
+  list-style: none;
+  margin-left: 8%;
+  margin-right: 8%;
   padding: 2%;
 }
 .name
@@ -38,31 +43,30 @@ https://www.modularscale.com/?18&px&1.333
 /*Grid code for main content*/
 .main-content
 {
-  margin-left: 8%;
-  margin-right: 8%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 2fr;
-  grid-column-gap: .2em;
+  grid-template-columns: repeat(1, 1fr);
   grid-row-gap: .2em;
   grid-template-areas:
-  "about-grid about-grid"
-  "edu-grid edu-grid"
-  "skill-grid skill-grid"
-  "quotes-grid quotes-grid"
-  "hobbies-grid hobbies-grid"
-  "library-grid library-grid"
-  "dogs-grid dogs-grid"
-  "photo-grid photo-grid";
+  "about-grid"
+  "edu-grid"
+  "skill-grid"
+  "quotes-grid"
+  "hobbies-grid"
+  "library-grid"
+  "dogs-grid"
+  "photo-grid";
+  margin-left: 8%;
+  margin-right: 8%;
 }
 .main-content section
 {
-  background-color: #e5dbff;
+  background-image: url("");
   border: .2em dotted #d0bfff;
   padding: 2%;
 }
 #about-box
 {
+  background-image: image(assets\img\stars.jpg);
   grid-area: about-grid;
 }
 #edu-box
@@ -97,16 +101,15 @@ https://www.modularscale.com/?18&px&1.333
 /*Grid code for footer*/
 footer
 {
-  margin-left: 8%;
-  margin-right: 8%;
-  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: .2em;
   grid-template-areas:
   ". . ."
   "foot-grid foot-grid foot-grid ";
-
+  list-style: none;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 footer section
 {
@@ -122,7 +125,7 @@ footer section
 /*background code*/
 html
 {
-  background-image: url("halftone 3b.png");
+  background-image: url("9.jpg");
 }
 
 /*Style code*/
@@ -144,8 +147,8 @@ h2
 p, ul
 {
   font-size: 1em;
-  margin-left: 10%;
   line-height: 1.222em;
+  margin-left: 10%;
 }
 ul
 {
@@ -155,4 +158,8 @@ ul
 footer
 {
   font-size: .563em;
+}
+img
+{
+  max-width: 50%;
 }
