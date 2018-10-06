@@ -20,7 +20,7 @@ https://www.modularscale.com/?18&px&1.333
 /*Grid code for header*/
 #header
 {
-  background-image: url("9.jpg");
+  background-color: #000000;
   border: .2em dotted #d0bfff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,6 +31,10 @@ https://www.modularscale.com/?18&px&1.333
   margin-left: 8%;
   margin-right: 8%;
   padding: 2%;
+}
+h1, #header p
+{
+  color: #ffffff;
 }
 .name
 {
@@ -52,8 +56,9 @@ https://www.modularscale.com/?18&px&1.333
   "skill-grid"
   "quotes-grid"
   "hobbies-grid"
-  "library-grid"
   "dogs-grid"
+  "library-grid"
+  "speech-grid"
   "photo-grid";
   margin-left: 8%;
   margin-right: 8%;
@@ -66,8 +71,8 @@ https://www.modularscale.com/?18&px&1.333
 }
 #about-box
 {
-  background-image: image(assets\img\stars.jpg);
-  grid-area: about-grid;
+background-color: #cc0052;
+grid-area: about-grid;
 }
 #edu-box
 {
@@ -92,6 +97,10 @@ https://www.modularscale.com/?18&px&1.333
 #fave-quotes-box
 {
   grid-area: quotes-grid;
+}
+#speech-box
+{
+  grid-area: speech-grid;
 }
 #photo-space-box
 {
