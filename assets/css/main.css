@@ -167,7 +167,7 @@ grid-area: about-grid;
 }
 #fave-quotes-box
 {
-  background-image: url("..\img\blue-back.jpg");
+  background-image: url("../img/blue-back.jpg");
   background-size: 100%;
   /*background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: quotes-grid;
@@ -179,7 +179,7 @@ grid-area: about-grid;
 }
 #dogs-box
 {
-  background-image: url("..\img\blue-back.jpg");
+  background-image: url("../img/blue-back.jpg");
   background-size: 100%;
   background-repeat: repeat;
   grid-area: dogs-grid;
@@ -229,7 +229,7 @@ footer section
 /*background code*/
 html
 {
-  background-image: url("..\img\red-back.jpg"); /*Code for HTML*/
+  background-image: url("../img/red-back.jpg"); /*Code for HTML*/
 }
 
 /*Style code*/
