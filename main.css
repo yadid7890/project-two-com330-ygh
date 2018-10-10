@@ -31,8 +31,6 @@ https://www.modularscale.com/?18&px&1.333
   list-style: none;
   margin-left: 8%;
   margin-right: 8%;
-  padding-left: 3%;
-  padding-top: 3%;
 }
 h1, #header p
 {
@@ -41,14 +39,18 @@ h1, #header p
 .name
 {
   grid-area: name1;
+  padding-left: .25em;
+  margin-bottom: .25em;
 }
 .name2
 {
   grid-area: name2;
+  padding-left: .5em
 }
 .name3
 {
   grid-area: name3;
+  padding-left: .75em
 }
 /*Grid code for menu*/
 #navigation
@@ -211,6 +213,8 @@ footer
   list-style: none;
   margin-left: 8%;
   margin-right: 8%;
+  font-size: .8em;
+  color: white;
 }
 footer section
 {
@@ -220,7 +224,7 @@ footer section
 
 #foot-box
 {
-  grid-area: foot-grid
+  grid-area: foot-grid;
 }
 
 /*background code*/
@@ -248,11 +252,12 @@ html
 }
 h2 /*will need to edit this in the media queries*/
 {
-  font-size: 1.777em;
+  font-size: 2.407em;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  color: #330033;
 }
 p, ul
 {
@@ -261,20 +266,17 @@ p, ul
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
+  color: white;
 }
 ul
 {
   list-style: url(s_03.png);
   margin-left: 9%
 }
-footer
-{
-  font-size: .8em;
-}
 img
 {
   max-width: 40%;
-  border: .5em outset pink;
+  border: .5em outset #663333;
   border-radius: 3em;
 }
 .center
@@ -282,6 +284,19 @@ img
   display: block;
   margin-left: 25%;
   margin-right: 25%;
+}
+figcaption
+{
+  font-size: 1em;
+  color: white;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+video
+{
+  max-width: 50%;
+  border: .5em outset #663333;
+  border-radius: 3em;
 }
 
 
@@ -294,9 +309,10 @@ img
 
   }
 }
-@@media screen and (max-width:800px)
+@@media screen and (min-width:800px)
 {
   html
   {
     font-size: 3em;
+    line-height: 0;
   }
