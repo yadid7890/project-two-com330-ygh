@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
 </head>
 <body>
   <!--Names are seperate to style them differently-->
@@ -21,16 +22,18 @@
   </header>
   <main>
     <!--Navigation bar-->
+    <ul id="navi"> <!--work around this ul-->
     <nav id="navigation">
-      <a href="#about-box">About Me</a>
-      <a href="#edu-box">Education</a>
-      <a href="#skill-box">Skills</a>
-      <a href="#fave-quotes-box">Favorite Quotes</a>
-      <a href="#hobbies-box">My hobbies</a>
-      <a href="#dogs-box">My Doggos</a>
-      <a href="#library-box">My Library</a>
-      <a href="#photo-space-box">My Speeches</a>
+      <li><a href="#about-box">About</a></li>
+      <li><a href="#edu-box">Education</a></li>
+      <li><a href="#skill-box">Skills</a></li>
+      <li><a href="#fave-quotes-box">Fav-Quotes</a></li>
+      <li><a href="#hobbies-box">Hobbies</a></li>
+      <li><a href="#dogs-box">Doggos</a></li>
+      <li><a href="#library-box">Library</a></li>
+      <li><a href="#photo-space-box">Speeches</a></li>
     </nav>
+    </ul>
     <!--Start of main content-->
     <article class="main-content">
       <!--Start of about me section-->
@@ -81,7 +84,7 @@
       <section id="dogs-box">
         <h2>My Doggos</h2>
         <!--list of info about my doggos-->
-        <ul class="dog-info">
+        <ul class="list">
           <li>I have two wonderful dogs! Bonbon and Oliver are both Australian Cattle dogs.</li>
           <li>Bonbon's coat is 'red' and Oliver's 'blue'.</li>
           <li>One of the breed's most distinctive feature is their face masks. Australian Cattle Dogs
@@ -139,7 +142,7 @@
       </section>
     </article>
   </main>
-  <footer>
+  <footer id="footer">
     <!--footer sections; add links to linkedin, emai, github, instagram, tumblr-->
     <!--include pictograms with each link-->
     <section id="foot-box">
