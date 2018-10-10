@@ -41,17 +41,12 @@ h1, #header p
   grid-area: name1;
   padding-left: .25em;
   /*cute curly display typeface */
-  font-size: 5.61em;
-  letter-spacing: .25em;
-  padding-bottom: .1%;
 }
 .name2
 {
   grid-area: name2;
   padding-left: .75em;
   /*cute curly display typeface */
-  font-size: 3.157em;
-  letter-spacing: .05em;
 
 }
 .name3
@@ -59,10 +54,6 @@ h1, #header p
   grid-area: name3;
   padding-left: 1em;
   /*cute curly display typeface */
-  font-size: 3.157em;
-  letter-spacing: .05em;
-
-}
 
 }
 /*Grid code for menu*/
@@ -166,8 +157,8 @@ a:active
 }
 #about-box
 {
-background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
-grid-area: about-grid;
+  background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
+  grid-area: about-grid;
 }
 #edu-box
 {
@@ -227,7 +218,6 @@ footer
   font-size: .8em;
   color: white;
   /*cute curly display typeface, same as name */
-
 }
 footer section
 {
@@ -247,7 +237,22 @@ html
 }
 
 /*Style code*/
-
+.name
+{
+  font-size: 5.61em;
+  letter-spacing: .25em;
+  padding-bottom: .1%;
+}
+.name2
+{
+  font-size: 3.157em;
+  letter-spacing: .05em;
+}
+.name3
+{
+  font-size: 3.157em;
+  letter-spacing: .05em;
+}
 h2 /*will need to edit this in the media queries*/
 {
   font-size: 2.407em;
@@ -255,9 +260,7 @@ h2 /*will need to edit this in the media queries*/
   padding-right: 5%;
   padding-top: 2.5%;
   padding-bottom: 1%;
-  color: #330033;
-  /*typeface */
-
+  color: lavender;
 }
 p, ul
 {
@@ -267,7 +270,12 @@ p, ul
   margin-right: 5%;
   margin-bottom: 5%;
   color: white;
-  /*typeface */
+}
+blockquote
+{
+  font-size: 1.5em;
+  color: #663366;
+  /*cute  display typeface */
 }
 ul
 {
