@@ -26,11 +26,13 @@ https://www.modularscale.com/?18&px&1.333
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
   "name1 name1 name1"
-  "name2 name2 name2";
+  "name2 name2 name2"
+  "name3 name3 name3";
   list-style: none;
   margin-left: 8%;
   margin-right: 8%;
-  padding: 2%;
+  padding-left: 3%;
+  padding-top: 3%;
 }
 h1, #header p
 {
@@ -43,6 +45,10 @@ h1, #header p
 .name2
 {
   grid-area: name2;
+}
+.name3
+{
+  grid-area: name3;
 }
 /*Grid code for menu*/
 #navigation
@@ -97,15 +103,16 @@ a
 {
   outline: none;
   text-decoration: none;
-  padding: 2px 1px 0;
+  padding: .25em 1em .25em 1em;
+  font-size: 1.2em;
 }
 a:link
 {
-  color: black;
+  color: #ffffff;
 }
 a:visited
 {
-  color: black;
+  color: #003366;
 }
 a:focus
 {
@@ -116,11 +123,11 @@ a:hover
 {
   border-bottom: 1px solid;
   background: #CDFEAA;
+  padding: 20px 60px;
 }
 a:active
 {
   background: #336633;
-  color: #CDFEAA;
 }
 /*Grid code for main content*/
 .main-content
@@ -140,12 +147,6 @@ a:active
   "photo-grid";
   margin-left: 8%;
   margin-right: 8%;
-}
-.main-content section
-{
-  background-image: url("");
-  padding-right: 2%;
-  padding-left: 2%;
 }
 #about-box
 {
@@ -221,6 +222,7 @@ footer section
 {
   grid-area: foot-grid
 }
+
 /*background code*/
 html
 {
@@ -228,27 +230,33 @@ html
 }
 
 /*Style code*/
-h1
+.name
 {
   font-size: 5.61em;
   letter-spacing: .25em;
+  padding-bottom: 1%;
 }
 .name2
 {
   font-size: 3.157em;
   letter-spacing: .05em;
 }
-h2
+.name3
+{
+  font-size: 3.157em;
+  letter-spacing: .05em;
+}
+h2 /*will need to edit this in the media queries*/
 {
   font-size: 1.777em;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+  padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
 p, ul
 {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.222em;
   margin-left: 5%;
   margin-right: 5%;
@@ -261,11 +269,13 @@ ul
 }
 footer
 {
-  font-size: .563em;
+  font-size: .8em;
 }
 img
 {
   max-width: 40%;
+  border: .5em outset pink;
+  border-radius: 3em;
 }
 .center
 {
@@ -276,3 +286,17 @@ img
 
 
 /*media queries*/
+@media screen and (max-width:384px)
+{
+  html
+  {
+    font-size: .75em;
+
+  }
+}
+@@media screen and (max-width:800px)
+{
+  html
+  {
+    font-size: 3em;
+  }
