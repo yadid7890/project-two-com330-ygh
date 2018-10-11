@@ -12,67 +12,56 @@ https://www.modularscale.com/?18&px&1.333
 1em=18px
 */
 /*Base Styles (element selectors; color; typography--> thats it)*/
-
+/*   # for id, . for class*/
+/*360px page as starting line*/
 /*Layout: ID selectors; width/height; position; flexbox, grid-->the big major styles*/
 /*Module/Modular sections (class or descendent selectors; repeating specific styles) */
 /*State (repeat the structure above; media queries; javascript-dependent styles) */
-
 
 /*Grid code for header*/
 #header
 {
   background-color: rgba(10, 10, 10, 0.5);
   display: grid;
-  grid-template-columns: repeat(3, 1%);
+  grid-template-columns: repeat(1, auto);
   grid-template-areas:
-  "name1 name1 name1"
-  "name2 name2 name2"
-  "name3 name3 name3";
-  list-style: none;
-  margin-left: 8%;
-  margin-right: 8%;
-}
-h1, #header p
-{
-  color: #ffffff;
+  "name1"
+  "name2"
+  "name3";
 }
 .name
 {
+  color: #ffffff;
   grid-area: name1;
-  padding-left: .25em;
   /*cute curly display typeface */
 }
 .name2
 {
+  color: #ffffff;
   grid-area: name2;
-  padding-left: .75em;
   /*cute curly display typeface */
-
 }
 .name3
 {
+  color: #ffffff;
   grid-area: name3;
-  padding-left: 1em;
   /*cute curly display typeface */
-
 }
 /*Grid code for menu*/
 #navigation
 {
-  background-color: rgba(71, 158, 53, 0.5); /* BACKGROUND COLOR CODE */
+  background-color: rgba(0, 128, 128, 0.5); /* BACKGROUND COLOR CODE */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, .5fr);
   grid-column-gap: 0;
+  grid-row-gap: 0;
   grid-template-areas:
-  "about-link edu-link skill-link quote-link"
-  "hobbies-link dogs-link library-link photo-link";
-  margin-left: 8%;
-  margin-right: 8%;
-  text-align: center;
-  font-size: 1em;
+  "about-link edu-link"
+  "skill-link quote-link"
+  "hobbies-link dogs-link"
+  "library-link photo-link";
   /*serif  typeface */
 }
-
 a[href="#about-box"]
 {
   grid-area: about-link;
@@ -105,36 +94,35 @@ a[href="#photo-space-box"]
 {
   grid-area: photo-link;
 }
+
 /* code for page links*/
 a
 {
   outline: none;
   text-decoration: none;
-  padding: .25em 1em .25em 1em;
   font-size: 1.2em;
 }
 a:link
 {
-  color: #ffffff;
+  color: pink;
 }
 a:visited
 {
-  color: #003366;
+  color: DarkTurquoise;
 }
 a:focus
 {
-  border-bottom: 1px solid;
-  background: #BAE498;
+  border-bottom: 5% solid;
+  background: DarkTurquoise;
 }
 a:hover
 {
-  border-bottom: 1px solid;
-  background: #CDFEAA;
-  padding: 20px 60px;
+  border-bottom: 1% solid;
+  background: DarkTurquoise;
 }
 a:active
 {
-  background: #336633;
+  background: DarkTurquoise;
 }
 /*Grid code for main content*/
 .main-content
@@ -152,8 +140,6 @@ a:active
   "library-grid"
   "speech-grid"
   "photo-grid";
-  margin-left: 8%;
-  margin-right: 8%;
 }
 #about-box
 {
@@ -172,8 +158,8 @@ a:active
 }
 #fave-quotes-box
 {
-  background-image: url("../img/blue-back.jpg");
-  background-size: 100%;
+  background: content-box radial-gradient(crimson, teal);
+  opacity: .85;
   grid-area: quotes-grid;
 }
 #hobbies-box
@@ -183,8 +169,8 @@ a:active
 }
 #dogs-box
 {
-  background-image: url("../img/blue-back.jpg");
-  background-size: 100%;
+  background: content-box radial-gradient(crimson, teal);
+  opacity: .85;
   grid-area: dogs-grid;
 }
 #library-box
@@ -202,86 +188,33 @@ a:active
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: photo-grid;
 }
-
 /*Grid code for footer*/
-footer
+#footer
 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: .2em;
   grid-template-areas:
-  ". . ."
-  "foot-grid foot-grid foot-grid ";
-  list-style: none;
-  margin-left: 8%;
-  margin-right: 8%;
+  "foot-grid";
   font-size: .8em;
   color: white;
   /*cute curly display typeface, same as name */
 }
 footer section
 {
-  background-color: rgba(71, 158, 53, 0.5); /* BACKGROUND COLOR CODE */
-  padding: 5%;
+  background-color: rgba(0, 128, 128, 0.5); /* BACKGROUND COLOR CODE */
+  font-size: .75em;
 }
-
 #foot-box
 {
   grid-area: foot-grid;
 }
-
 /*background code*/
 html
 {
   background-image: url("../img/red-back.jpg"); /*Code for HTML*/
 }
-
-/*Style code*/
-.name
-{
-  font-size: 5.61em;
-  letter-spacing: .25em;
-  padding-bottom: .1%;
-}
-.name2
-{
-  font-size: 3.157em;
-  letter-spacing: .05em;
-}
-.name3
-{
-  font-size: 3.157em;
-  letter-spacing: .05em;
-}
-h2 /*will need to edit this in the media queries*/
-{
-  font-size: 2.407em;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2.5%;
-  padding-bottom: 1%;
-  color: lavender;
-}
-p, ul
-{
-  font-size: 1.2em;
-  line-height: 1.222em;
-  margin-left: 6%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  color: white;
-}
-blockquote
-{
-  font-size: 1.5em;
-  color: #663366;
-  /*cute  display typeface */
-}
-ul
-{
-  list-style: url(s_03.png);
-  margin-left: 9%
-}
+/*responsive image code */
 img
 {
   max-width: 40%;
@@ -298,8 +231,6 @@ figcaption
 {
   font-size: 1em;
   color: white;
-  padding-left: 8%;
-  padding-right: 8%;
 }
 video
 {
@@ -308,21 +239,49 @@ video
   border-radius: 3em;
 }
 
-
-/*media queries*/
-@media screen and (max-width: 484px)
+/*Style code*/
+.name
 {
-  html
-  {
-    font-size: .75em;
-    line-height: 1.1em;
-  }
+  font-size:4.02em;
+  line-height: 1em;
+  letter-spacing: .1em;
 }
-
-@media screen and (min-width: 800px)
+.name2
 {
-  html
-  {
-    font-size: 1.5em;
-  }
+  font-size: 2.369em;
+  letter-spacing: .08em;
+  line-height: 1em;
+}
+.name3
+{
+  font-size: 2.369em;
+  letter-spacing: .08em;
+  line-height: 1em
+}
+h2 /*will need to edit this in the media queries*/
+{
+  font-size: 1.777em;
+  color: pink;
+}
+article p, .list
+{
+  line-height: 1.222em;
+  color: ghostwhite;
+}
+.list, .dog-list
+{
+  list-style-type: circle;
+}
+.dog-list
+{
+  color: ghostwhite;
+}
+blockquote
+{
+  font-size: 3.157em;
+  color: ;
+  /*cute  display typeface */
+  font-family: 'Srisakdi', cursive;
+  text-align: center;
+  line-height: 1.5em;
 }
