@@ -53,13 +53,14 @@ https://www.modularscale.com/?18&px&1.333
   background-color: rgba(0, 128, 128, 0.5); /* BACKGROUND COLOR CODE */
   display: grid;
   grid-template-columns: repeat(2, .5fr);
-  grid-column-gap: 0;
-  grid-row-gap: 0;
   grid-template-areas:
   "about-link edu-link"
   "skill-link quote-link"
   "hobbies-link dogs-link"
   "library-link photo-link";
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   /*serif  typeface */
 }
 a[href="#about-box"]
@@ -94,13 +95,13 @@ a[href="#photo-space-box"]
 {
   grid-area: photo-link;
 }
-
 /* code for page links*/
 a
 {
   outline: none;
   text-decoration: none;
-  font-size: 1.2em;
+  line-height: 1.5em;
+  font-size: 2.369em;
 }
 a:link
 {
@@ -112,13 +113,12 @@ a:visited
 }
 a:focus
 {
-  border-bottom: 5% solid;
   background: DarkTurquoise;
 }
 a:hover
 {
-  border-bottom: 1% solid;
-  background: DarkTurquoise;
+  border-bottom: solid;
+  background: ghostwhite;
 }
 a:active
 {
@@ -192,11 +192,11 @@ a:active
 #footer
 {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 5fr;
   grid-gap: .2em;
   grid-template-areas:
   "foot-grid";
-  font-size: .8em;
+  font-size: 6em;
   color: white;
   /*cute curly display typeface, same as name */
 }
@@ -217,15 +217,15 @@ html
 /*responsive image code */
 img
 {
-  max-width: 40%;
-  border: .5em outset #663333;
+  max-width: 60%;
+  border: .5em outset teal;
   border-radius: 3em;
 }
 .center
 {
   display: block;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 30%;
 }
 figcaption
 {
@@ -235,37 +235,41 @@ figcaption
 video
 {
   max-width: 50%;
-  border: .5em outset #663333;
+  border: .5em outset teal;
   border-radius: 3em;
 }
 
 /*Style code*/
 .name
 {
-  font-size:4.02em;
+  font-size:7.478em;
   line-height: 1em;
   letter-spacing: .1em;
+  text-align: center;
 }
 .name2
 {
-  font-size: 2.369em;
+  font-size: 4em;
   letter-spacing: .08em;
   line-height: 1em;
+  text-align: right;
 }
 .name3
 {
-  font-size: 2.369em;
+  font-size: 4em;
   letter-spacing: .08em;
-  line-height: 1em
+  line-height: 1em;
+  text-align: right;
 }
 h2 /*will need to edit this in the media queries*/
 {
-  font-size: 1.777em;
+  font-size: 2.369em;
   color: pink;
 }
 article p, .list
 {
-  line-height: 1.222em;
+  font-size: 1.333em;
+  line-height: 1.777em;
   color: ghostwhite;
 }
 .list, .dog-list
@@ -279,7 +283,7 @@ article p, .list
 blockquote
 {
   font-size: 3.157em;
-  color: ;
+  color: ghostwhite;
   /*cute  display typeface */
   font-family: 'Srisakdi', cursive;
   text-align: center;
