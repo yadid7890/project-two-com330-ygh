@@ -18,49 +18,78 @@ https://www.modularscale.com/?18&px&1.333
 /*Module/Modular sections (class or descendent selectors; repeating specific styles) */
 /*State (repeat the structure above; media queries; javascript-dependent styles) */
 
-/*Grid code for header*/
-#header
+
+/*background code*/
+html
 {
-  background-color: rgba(10, 10, 10, 0.5);
+  background-image: url("../img/red-back.jpg"); /*Code for HTML*/
+}
+/*Grid code for header*/
+.header
+{
+  background-color: rgba(10, 10, 10, 0.6);
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
   "name1"
   "name2"
   "name3";
 }
-.name
+#name
 {
   color: #ffffff;
   grid-area: name1;
   /*cute curly display typeface */
 }
-.name2
+#name2
 {
   color: #ffffff;
   grid-area: name2;
   /*cute curly display typeface */
 }
-.name3
+#name3
 {
   color: #ffffff;
   grid-area: name3;
   /*cute curly display typeface */
 }
+
+
+
+/*responsive image code */
+img
+{
+  max-width: 80%;
+  border: .5em outset teal;
+  border-radius: 3em;
+}
+.center
+{
+  display: block;
+
+}
+figcaption
+{
+  font-size: 1em;
+  color: white;
+}
+video
+{
+  max-width: 100%;
+  border: .5em outset teal;
+  border-radius: 3em;
+}
 /*Grid code for menu*/
 #navigation
 {
-  background-color: rgba(0, 128, 128, 0.5); /* BACKGROUND COLOR CODE */
+  background-color: rgba(0, 128, 128, 0.7); /* BACKGROUND COLOR CODE */
   display: grid;
-  grid-template-columns: repeat(2, .5fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
   "about-link edu-link"
   "skill-link quote-link"
   "hobbies-link dogs-link"
   "library-link photo-link";
-  text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
   /*serif  typeface */
 }
 a[href="#about-box"]
@@ -101,7 +130,7 @@ a
   outline: none;
   text-decoration: none;
   line-height: 1.5em;
-  font-size: 2.369em;
+  font-size: 2em;
 }
 a:link
 {
@@ -158,7 +187,7 @@ a:active
 }
 #fave-quotes-box
 {
-  background: content-box radial-gradient(crimson, teal);
+  background: content-box radial-gradient(circle, crimson, teal);
   opacity: .85;
   grid-area: quotes-grid;
 }
@@ -192,74 +221,38 @@ a:active
 #footer
 {
   display: grid;
-  grid-template-columns: 5fr;
   grid-gap: .2em;
   grid-template-areas:
   "foot-grid";
+  grid-template-columns: repeat(1, 1fr);
   font-size: 6em;
   color: white;
   /*cute curly display typeface, same as name */
 }
 footer section
 {
-  background-color: rgba(0, 128, 128, 0.5); /* BACKGROUND COLOR CODE */
+  background-color: rgba(0, 128, 128, 0.7); /* BACKGROUND COLOR CODE */
   font-size: .75em;
 }
 #foot-box
 {
   grid-area: foot-grid;
 }
-/*background code*/
-html
-{
-  background-image: url("../img/red-back.jpg"); /*Code for HTML*/
-}
-/*responsive image code */
-img
-{
-  max-width: 60%;
-  border: .5em outset teal;
-  border-radius: 3em;
-}
-.center
-{
-  display: block;
-  margin-left: 15%;
-  margin-right: 30%;
-}
-figcaption
-{
-  font-size: 1em;
-  color: white;
-}
-video
-{
-  max-width: 50%;
-  border: .5em outset teal;
-  border-radius: 3em;
-}
-
 /*Style code*/
-.name
+#name
 {
-  font-size:7.478em;
-  line-height: 1em;
-  letter-spacing: .1em;
+  font-size:6.312em;
   text-align: center;
 }
-.name2
+#name2
 {
   font-size: 4em;
-  letter-spacing: .08em;
-  line-height: 1em;
-  text-align: right;
+  text-align: center;
 }
-.name3
+#name3
 {
   font-size: 4em;
-  letter-spacing: .08em;
-  line-height: 1em;
-  text-align: right;
+  text-align: center;
 }
 h2 /*will need to edit this in the media queries*/
 {
@@ -268,16 +261,7 @@ h2 /*will need to edit this in the media queries*/
 }
 article p, .list
 {
-  font-size: 1.333em;
-  line-height: 1.777em;
-  color: ghostwhite;
-}
-.list, .dog-list
-{
-  list-style-type: circle;
-}
-.dog-list
-{
+  font-size: .5em;
   color: ghostwhite;
 }
 blockquote
@@ -286,6 +270,10 @@ blockquote
   color: ghostwhite;
   /*cute  display typeface */
   font-family: 'Srisakdi', cursive;
-  text-align: center;
-  line-height: 1.5em;
+
+}
+figcaption
+{
+  font-size: .5em;
+  color: ghostwhite;
 }
