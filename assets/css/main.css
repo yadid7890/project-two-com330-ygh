@@ -81,7 +81,7 @@ video
   grid-area: name2;
   /*cute curly display typeface */
   padding-bottom: 2.5%;
-  text-align: center;
+  text-align: left;
 }
 #name3
 {
@@ -89,7 +89,7 @@ video
   grid-area: name3;
   /*cute curly display typeface */
   padding-bottom: 5%;
-  text-align: center;
+  text-align: left;
 }
 /*Grid code for menu*/
 #navigation
@@ -272,17 +272,16 @@ footer section
 #name2
 {
   font-size: 4.209em;
-  padding-left: 6%;
+  padding-left: 10%;
   font-family: 'Cormorant', serif;
   font-weight: 700;
 }
 #name3
 {
   font-size: 4.209em;
-  padding-left: 6%;
+  padding-left: 10%;
   font-family: 'Cormorant', serif;
   font-weight: 700;
-
 }
 h2 /*will need to edit this in the media queries*/
 {
