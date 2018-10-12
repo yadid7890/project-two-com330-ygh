@@ -44,7 +44,7 @@ figcaption
   line-height: 1.2em;
   color: ghostwhite;
   padding-bottom: 5%;
-  padding-left: 2.5%;
+  padding-left: 10%;
   padding-right: 2.5%;
   font-family: 'Cormorant Infant', serif;
 }
@@ -300,7 +300,6 @@ article p
   padding-right: 2.5%;
   padding-bottom: 5%;
   font-family: 'Cormorant Infant', serif;
-
 }
 .list
  {
@@ -326,5 +325,4 @@ blockquote
   padding-top: 5%;
   padding-right: 2.5%;
   padding-left: 2.5%;
-
 }
