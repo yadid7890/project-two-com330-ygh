@@ -39,7 +39,10 @@ img
 figcaption
 {
   font-size: 1em;
-  color: white;
+  color: ghostwhite;
+  padding-bottom: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 video
 {
@@ -136,6 +139,7 @@ a
   text-decoration: none;
   line-height: 1.5em;
   font-size: 2em;
+  font-family: 'Flavors', cursive;
 }
 a:link
 {
@@ -230,6 +234,7 @@ a:active
   grid-template-columns: repeat(1, 1fr);
   font-size: 2.369em;
   color: white;
+  font-family: 'Emilys Candy', cursive;
   /*cute curly display typeface, same as name */
 }
 footer section
@@ -248,16 +253,22 @@ footer section
 {
   font-size:7.478em;
   padding-left: 6%;
+  font-family: 'Emilys Candy', cursive;
 }
 #name2
 {
   font-size: 4.209em;
   padding-left: 6%;
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
 }
 #name3
 {
   font-size: 4.209em;
   padding-left: 6%;
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+
 }
 h2 /*will need to edit this in the media queries*/
 {
@@ -266,6 +277,7 @@ h2 /*will need to edit this in the media queries*/
   padding-left: 2.5%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  font-family: 'Emilys Candy', cursive;
 }
 article p
 {
@@ -275,6 +287,8 @@ article p
   padding-left: 2.5%;
   padding-right: 2.5%;
   padding-bottom: 5%;
+  font-family: 'Cormorant Infant', serif;
+
 }
 .list
  {
@@ -285,24 +299,20 @@ article p
   padding-right: 3.5%;
   padding-bottom: 5%;
   list-style: circle;
-
+  font-family: 'Cormorant Infant', serif;
  }
 blockquote
 {
-  font-size: 3.157em;
-  color: ghostwhite;
-  /*cute  display typeface */
-  font-family: 'Srisakdi', cursive;
-  text-align: center;
-  padding-bottom: 5%;
-  padding-top: 5%;
-
-}
-figcaption
-{
   font-size: 1.5em;
   color: ghostwhite;
-  padding-bottom: 5%;
-  padding-left: 2.5%;
+  /*cute  display typeface */
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 5%;
   padding-right: 2.5%;
+  padding-left: 2.5%;
+
 }
