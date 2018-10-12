@@ -35,21 +35,26 @@ img
 {
   display: block;
   margin-left: 8%;
+  margin-bottom: 5%;
+  margin-top: 2.5%;
 }
 figcaption
 {
   font-size: 1em;
+  line-height: 1.2em;
   color: ghostwhite;
   padding-bottom: 5%;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  font-family: 'Cormorant Infant', serif;
 }
 video
 {
-  max-width: 100%;
+  max-width: 70%;
   border: .5em outset teal;
   border-radius: 3em;
   margin-left: 8%;
+  margin-bottom: 5%;
 }
 /*Grid code for header*/
 .header
@@ -182,48 +187,57 @@ a:active
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: about-grid;
+  color: DarkTurquoise;
 }
 #edu-box
 {
   background-color: rgba(240, 67, 113, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: edu-grid;
+  color: DarkTurquoise;
 }
 #skill-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: skill-grid;
+  color: DarkTurquoise;
 }
 #fave-quotes-box
 {
   background: content-box radial-gradient(circle, crimson, teal);
   opacity: .85;
   grid-area: quotes-grid;
+  color: pink;
 }
 #hobbies-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: hobbies-grid;
+  color: DarkTurquoise;
 }
 #dogs-box
 {
   background: content-box radial-gradient(crimson, teal);
   opacity: .85;
   grid-area: dogs-grid;
+  color: pink;
 }
 #library-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: library-grid;
+  color: DarkTurquoise;
 }
 #speech-box
 {
   background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: speech-grid;
+  color: DarkTurquoise;
 }
 #photo-space-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   grid-area: photo-grid;
+  color: DarkTurquoise;
 }
 /*Grid code for footer*/
 #footer
@@ -273,7 +287,6 @@ footer section
 h2 /*will need to edit this in the media queries*/
 {
   font-size: 2.369em;
-  color: pink;
   padding-left: 2.5%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
@@ -281,7 +294,7 @@ h2 /*will need to edit this in the media queries*/
 }
 article p
 {
-  font-size: 1.5em;
+  font-size: 1.125em;
   line-height:1.5em;
   color: ghostwhite;
   padding-left: 2.5%;
