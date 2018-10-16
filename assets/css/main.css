@@ -31,49 +31,49 @@ html
 /*responsive image code */
 img
 {
-  max-width: 80%;
   border: .5em outset teal;
   border-radius: 3em;
+  max-width: 80%;
 }
 .center
 {
   display: block;
-  margin-left: 8%;
-  margin-bottom: 5%;
+  margin-left: 6.5%;
   margin-top: 2.5%;
+  margin-bottom: 1%;
 }
 figcaption
 {
-  font-size: 1em;
-  line-height: 1.2em;
   color: ghostwhite;
+  font-family: 'Cormorant Infant', serif;
+  font-size: .95em;
+  line-height: 1em;
   padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 2.5%;
-  font-family: 'Cormorant Infant', serif;
 }
 video
 {
-  max-width: 70%;
   border: .5em outset teal;
   border-radius: 3em;
-  margin-left: 8%;
   margin-bottom: 5%;
+  margin-left: 8%;
+  max-width: 70%;
 }
 /*Grid code for header*/
 .header
 {
   background-color: rgba(10, 10, 10, 0.6);
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
   "name1"
   "name2"
   "name3";
+  grid-template-columns: repeat(1, 1fr);
 }
 #name
 {
-  color: #ffffff;
+  color: azure;
   grid-area: name1;
   padding-top: 5%;
   padding-bottom: 2.5%;
@@ -81,7 +81,7 @@ video
 }
 #name2
 {
-  color: #ffffff;
+  color: azure;
   grid-area: name2;
   /*cute curly display typeface */
   padding-bottom: 2.5%;
@@ -89,7 +89,7 @@ video
 }
 #name3
 {
-  color: #ffffff;
+  color: azure;
   grid-area: name3;
   /*cute curly display typeface */
   padding-bottom: 5%;
@@ -144,11 +144,11 @@ a[href="#photo-space-box"]
 /* code for page links*/
 a
 {
+  font-size: 2.369em;
+  font-family: 'Flavors', cursive;
+  line-height: 1.777em;
   outline: none;
   text-decoration: none;
-  line-height: 1.5em;
-  font-size: 2em;
-  font-family: 'Flavors', cursive;
 }
 a:link
 {
@@ -164,8 +164,8 @@ a:focus
 }
 a:hover
 {
+  background: azure;
   border-bottom: solid;
-  background: ghostwhite;
 }
 a:active
 {
@@ -190,69 +190,70 @@ a:active
 #about-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: about-grid;
   color: DarkTurquoise;
+  grid-area: about-grid;
 }
 #edu-box
 {
   background-color: rgba(240, 67, 113, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: edu-grid;
   color: DarkTurquoise;
+  grid-area: edu-grid;
 }
 #skill-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: skill-grid;
   color: DarkTurquoise;
+  grid-area: skill-grid;
 }
 #fave-quotes-box
 {
   background: content-box radial-gradient(circle, crimson, teal);
-  opacity: .85;
-  grid-area: quotes-grid;
   color: pink;
+  grid-area: quotes-grid;
+  opacity: .85;
+
 }
 #hobbies-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: hobbies-grid;
   color: DarkTurquoise;
+  grid-area: hobbies-grid;
 }
 #dogs-box
 {
   background: content-box radial-gradient(crimson, teal);
-  opacity: .85;
-  grid-area: dogs-grid;
   color: pink;
+  grid-area: dogs-grid;
+  opacity: .85;
 }
 #library-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: library-grid;
   color: DarkTurquoise;
+  grid-area: library-grid;
 }
 #speech-box
 {
   background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: speech-grid;
   color: DarkTurquoise;
+  grid-area: speech-grid;
 }
 #photo-space-box
 {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
-  grid-area: photo-grid;
   color: DarkTurquoise;
+  grid-area: photo-grid;
 }
 /*Grid code for footer*/
 #footer
 {
+  color: white;
   display: grid;
+  font-family: 'Emilys Candy', cursive;
+  font-size: 2.369em;
   grid-template-areas:
   "foot-grid";
   grid-template-columns: repeat(1, 1fr);
-  font-size: 2.369em;
-  color: white;
-  font-family: 'Emilys Candy', cursive;
   /*cute curly display typeface, same as name */
 }
 footer section
@@ -269,48 +270,48 @@ footer section
 /*Style code*/
 #name
 {
-  font-size:7.478em;
-  padding-left: 6%;
   font-family: 'Emilys Candy', cursive;
+  font-size:8.413em;
+  padding-left: 8%;
 }
 #name2
 {
-  font-size: 4.209em;
-  padding-left: 10%;
   font-family: 'Cormorant', serif;
+  font-size: 4.735em;
   font-weight: 700;
+  padding-left: 10%;
 }
 #name3
 {
-  font-size: 4.209em;
-  padding-left: 10%;
   font-family: 'Cormorant', serif;
+  font-size: 4.735em;
   font-weight: 700;
+  padding-left: 10%;
 }
 h2 /*will need to edit this in the media queries*/
 {
-  font-size: 2.369em;
-  padding-left: 2.5%;
+  font-size: 2.665em;
+  padding-left: .422em;
   padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-bottom: 4%;
   font-family: 'Emilys Candy', cursive;
 }
 article p
 {
-  font-size: 1.125em;
+  font-size: 1.5em;
   line-height:1.5em;
   color: ghostwhite;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: .844em;
+  padding-right: .844em;
   padding-bottom: 5%;
   font-family: 'Cormorant Infant', serif;
 }
 .list
  {
-  font-size: 1.125em;
+  font-size: 1.333em;
   line-height:1.5em;
   color: ghostwhite;
-  padding-left: 8%;
+  padding-left: 1.333em;
   padding-right: 3.5%;
   padding-bottom: 5%;
   list-style: circle;
@@ -318,15 +319,18 @@ article p
  }
 blockquote
 {
-  font-size: 1.5em;
+  font-size: 1.999em;
   color: ghostwhite;
   /*cute  display typeface */
   font-family: 'Cormorant', serif;
   font-weight: 300;
   font-style: italic;
-  text-align: center;
-  padding-bottom: 10%;
-  padding-top: 5%;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
+  padding-bottom: 30%;
+  padding-top: 20%;
+  padding-right: 1em;
+  padding-left: .844em;
+  text-shadow: .03em .01em;
+  line-height: 1.5em;
 }
+
+@media screen and (min-width:)
