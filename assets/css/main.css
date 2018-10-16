@@ -50,7 +50,7 @@ figcaption
   line-height: 1.222em;
   padding-bottom: 5%;
   padding-left: 10%;
-  padding-right: 2.5%;
+  padding-right: 10%;
 }
 video
 {
@@ -264,7 +264,7 @@ footer section
   grid-area: foot-grid;
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-left: 2.5%;
+  padding-left: 3%;
 }
 /*Style code*/
 #name
@@ -343,4 +343,17 @@ blockquote
   line-height: 1.5em;
 }
 
-@media screen and (min-width:)
+@media screen and (min-width: 600px)
+{
+  html
+  {
+    font-size: 1.333em;
+  }
+}
+@media screen and (min-width: 850px)
+{
+  figcaption
+  {
+    font-size: 1.5em;
+  }
+}
