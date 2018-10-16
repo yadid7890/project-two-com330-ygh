@@ -46,8 +46,8 @@ figcaption
 {
   color: ghostwhite;
   font-family: 'Cormorant Infant', serif;
-  font-size: .95em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 1.222em;
   padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 2.5%;
@@ -211,7 +211,6 @@ a:active
   color: pink;
   grid-area: quotes-grid;
   opacity: .85;
-
 }
 #hobbies-box
 {
@@ -306,8 +305,8 @@ article p
   padding-bottom: 5%;
   font-family: 'Cormorant Infant', serif;
 }
-.list
- {
+#skill-list, #dog-list
+{
   font-size: 1.333em;
   line-height:1.5em;
   color: ghostwhite;
@@ -316,7 +315,18 @@ article p
   padding-bottom: 5%;
   list-style: circle;
   font-family: 'Cormorant Infant', serif;
- }
+}
+ #hobbies-list > li
+{
+  font-size: 1.333em;
+  line-height:1.5em;
+  color: ghostwhite;
+  padding-left: 1.333em;
+  padding-right: 3.5%;
+  padding-bottom: 5%;
+  list-style: circle;
+  font-family: 'Cormorant Infant', serif;
+}
 blockquote
 {
   font-size: 1.999em;
