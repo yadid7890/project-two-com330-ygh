@@ -3,8 +3,8 @@ links at bottom, make them into a list*/
 /*change white text to not white, and black to somehting else. Dont use the pure hues!
 
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 /* stylelint-disable*/
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
@@ -24,26 +24,22 @@ https://www.modularscale.com/?18&px&1.333
 
 
 /*background code*/
-html
-{
+html {
   background-image: url("../img/red-back.jpg"); /*Code for HTML*/
 }
 /*responsive image code */
-img
-{
+img {
   border: .5em outset teal;
   border-radius: 3em;
   max-width: 80%;
 }
-.center
-{
+.center {
   display: block;
   margin-left: 6.5%;
   margin-top: 2.5%;
   margin-bottom: 1%;
 }
-figcaption
-{
+figcaption {
   color: ghostwhite;
   font-family: 'Cormorant Infant', serif;
   font-size: 1em;
@@ -52,8 +48,7 @@ figcaption
   padding-left: 10%;
   padding-right: 10%;
 }
-video
-{
+video {
   border: .5em outset teal;
   border-radius: 3em;
   margin-bottom: 5%;
@@ -61,8 +56,7 @@ video
   max-width: 70%;
 }
 /*Grid code for header*/
-.header
-{
+.header {
   background-color: rgba(10, 10, 10, 0.6);
   display: grid;
   grid-template-areas:
@@ -71,24 +65,21 @@ video
   "name3";
   grid-template-columns: repeat(1, 1fr);
 }
-#name
-{
+#name {
   color: azure;
   grid-area: name1;
   padding-top: 5%;
   padding-bottom: 2.5%;
   /*cute curly display typeface */
 }
-#name2
-{
+#name2 {
   color: azure;
   grid-area: name2;
   /*cute curly display typeface */
   padding-bottom: 2.5%;
   text-align: left;
 }
-#name3
-{
+#name3 {
   color: azure;
   grid-area: name3;
   /*cute curly display typeface */
@@ -96,8 +87,7 @@ video
   text-align: left;
 }
 /*Grid code for menu*/
-#navigation
-{
+#navigation {
   background-color: rgba(0, 128, 128, 0.7); /* BACKGROUND COLOR CODE */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -109,71 +99,56 @@ video
   /*serif  typeface */
   text-align: center;
 }
-a[href="#about-box"]
-{
+a[href="#about-box"] {
   grid-area: about-link;
 }
-a[href="#edu-box"]
-{
+a[href="#edu-box"] {
   grid-area: edu-link;
 }
-a[href="#skill-box"]
-{
+a[href="#skill-box"] {
   grid-area: skill-link;
 }
-a[href="#fave-quotes-box"]
-{
+a[href="#fave-quotes-box"] {
   grid-area: quote-link;
 }
-a[href="#hobbies-box"]
-{
+a[href="#hobbies-box"] {
   grid-area: hobbies-link;
 }
-a[href="#dogs-box"]
-{
+a[href="#dogs-box"] {
   grid-area: dogs-link;
 }
-a[href="#library-box"]
-{
+a[href="#library-box"] {
   grid-area: library-link;
 }
-a[href="#photo-space-box"]
-{
+a[href="#photo-space-box"] {
   grid-area: photo-link;
 }
 /* code for page links*/
-a
-{
+a {
   font-size: 2.369em;
   font-family: 'Flavors', cursive;
   line-height: 1.777em;
   outline: none;
   text-decoration: none;
 }
-a:link
-{
+a:link {
   color: pink;
 }
-a:visited
-{
+a:visited {
   color: DarkTurquoise;
 }
-a:focus
-{
+a:focus {
   background: DarkTurquoise;
 }
-a:hover
-{
+a:hover {
   background: azure;
   border-bottom: solid;
 }
-a:active
-{
+a:active {
   background: DarkTurquoise;
 }
 /*Grid code for main content*/
-.main-content
-{
+.main-content {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
@@ -187,65 +162,55 @@ a:active
   "speech-grid"
   "photo-grid";
 }
-#about-box
-{
+#about-box {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: about-grid;
 }
-#edu-box
-{
+#edu-box {
   background-color: rgba(240, 67, 113, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: edu-grid;
 }
-#skill-box
-{
+#skill-box {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: skill-grid;
 }
-#fave-quotes-box
-{
+#fave-quotes-box {
   background: content-box radial-gradient(circle, crimson, teal);
   color: pink;
   grid-area: quotes-grid;
   opacity: .85;
 }
-#hobbies-box
-{
+#hobbies-box {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: hobbies-grid;
 }
-#dogs-box
-{
+#dogs-box {
   background: content-box radial-gradient(crimson, teal);
   color: pink;
   grid-area: dogs-grid;
   opacity: .85;
 }
-#library-box
-{
+#library-box {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: library-grid;
 }
-#speech-box
-{
+#speech-box {
   background-color: rgba(158, 53, 123, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: speech-grid;
 }
-#photo-space-box
-{
+#photo-space-box {
   background-color: rgba(204, 0, 82, 0.5); /* BACKGROUND COLOR CODE */
   color: DarkTurquoise;
   grid-area: photo-grid;
 }
 /*Grid code for footer*/
-#footer
-{
+#footer {
   color: white;
   display: grid;
   font-family: 'Emilys Candy', cursive;
@@ -255,105 +220,91 @@ a:active
   grid-template-columns: repeat(1, 1fr);
   /*cute curly display typeface, same as name */
 }
-footer section
-{
+footer section {
   background-color: rgba(0, 128, 128, 0.7); /* BACKGROUND COLOR CODE */
 }
-#foot-box
-{
+#foot-box {
   grid-area: foot-grid;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 3%;
 }
 /*Style code*/
-#name
-{
+#name {
   font-family: 'Emilys Candy', cursive;
   font-size:8.413em;
   padding-left: 8%;
 }
-#name2
-{
+#name2 {
   font-family: 'Cormorant', serif;
   font-size: 4.735em;
   font-weight: 700;
   padding-left: 10%;
 }
-#name3
-{
+#name3 {
   font-family: 'Cormorant', serif;
   font-size: 4.735em;
   font-weight: 700;
   padding-left: 10%;
 }
-h2 /*will need to edit this in the media queries*/
-{
+h2 {/*will need to edit this in the media queries*/
+  font-family: 'Emilys Candy', cursive;
   font-size: 2.665em;
   padding-left: .422em;
   padding-top: 2.5%;
   padding-bottom: 4%;
-  font-family: 'Emilys Candy', cursive;
 }
-article p
-{
+article p {
+  color: ghostwhite;
+  font-family: 'Cormorant Infant', serif;
   font-size: 1.5em;
   line-height:1.5em;
-  color: ghostwhite;
   padding-left: .844em;
   padding-right: .844em;
   padding-bottom: 5%;
-  font-family: 'Cormorant Infant', serif;
 }
-#skill-list, #dog-list
-{
+#skill-list, #dog-list {
+  color: ghostwhite;
+  font-family: 'Cormorant Infant', serif;
   font-size: 1.333em;
   line-height:1.5em;
-  color: ghostwhite;
+  list-style: circle;
   padding-left: 1.333em;
   padding-right: 3.5%;
   padding-bottom: 5%;
-  list-style: circle;
-  font-family: 'Cormorant Infant', serif;
 }
- #hobbies-list > li
-{
+#hobbies-list > li {
+  color: ghostwhite;
+  font-family: 'Cormorant Infant', serif;
   font-size: 1.333em;
   line-height:1.5em;
-  color: ghostwhite;
+  list-style: circle;
   padding-left: 1.333em;
   padding-right: 3.5%;
   padding-bottom: 5%;
-  list-style: circle;
-  font-family: 'Cormorant Infant', serif;
 }
-blockquote
-{
-  font-size: 1.999em;
+blockquote {
   color: ghostwhite;
-  /*cute  display typeface */
   font-family: 'Cormorant', serif;
-  font-weight: 300;
+  font-size: 1.999em;
+  /*cute  display typeface */
   font-style: italic;
+  font-weight: 300;
+  line-height: 1.5em;
   padding-bottom: 30%;
   padding-top: 20%;
   padding-right: 1em;
   padding-left: .844em;
   text-shadow: .03em .01em;
-  line-height: 1.5em;
 }
 
-@media screen and (min-width: 600px)
-{
-  html
-  {
+@media screen and (min-width: 600px) {
+  html {
     font-size: 1.333em;
   }
 }
-@media screen and (min-width: 850px)
-{
-  figcaption
-  {
+@media screen and (min-width: 850px) {
+  figcaption {
     font-size: 1.5em;
   }
 }
