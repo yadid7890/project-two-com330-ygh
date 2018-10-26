@@ -31,7 +31,10 @@ html {
 img {
   border: 0.5em outset teal;
   border-radius: 3em;
+  display: block;
   max-width: 80%;
+  object-fit: contain;
+  object-position: center center;
 }
 .center {
   display: block;
@@ -54,23 +57,18 @@ video {
   margin-bottom: 5%;
   margin-left: 8%;
   max-width: 70%;
+  display: block;
+  height: 40vh;
 }
 /*Grid code for header*/
 .header {
   background-color: rgba(10, 10, 10, 0.6);
   display: grid;
   grid-template-areas:
-    "name1"
+    "."
     "name2"
     "name3";
   grid-template-columns: repeat(1, 1fr);
-}
-#name {
-  color: azure;
-  grid-area: name1;
-  padding-top: 5%;
-  padding-bottom: 2.5%;
-  /*cute curly display typeface */
 }
 #name2 {
   color: azure;
@@ -230,11 +228,6 @@ footer section {
   padding-left: 3%;
 }
 /*Style code*/
-#name {
-  font-family: 'Emilys Candy', cursive;
-  font-size: 8.413em;
-  padding-left: 8%;
-}
 #name2 {
   font-family: Cormorant, serif;
   font-size: 4.735em;
@@ -246,6 +239,15 @@ footer section {
   font-size: 4.735em;
   font-weight: 700;
   padding-left: 10%;
+}
+h1 {
+  color: azure;
+  font-family: 'Emilys Candy', cursive;
+  font-size: 8.413em;
+  padding-left: 8%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  /*cute curly display typeface */
 }
 h2 {/*will need to edit this in the media queries*/
   font-family: 'Emilys Candy', cursive;
