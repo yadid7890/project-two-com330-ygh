@@ -29,21 +29,17 @@ html {
 }
 /*responsive image code */
 img {
-  border: 0.5em outset teal;
+  border: 0.2em outset teal;
   border-radius: 3em;
   display: block;
   max-width: 80%;
-  object-fit: contain;
-  object-position: center center;
-}
-.center {
-  display: block;
   margin-left: 6.5%;
   margin-top: 2.5%;
   margin-bottom: 1%;
 }
 figcaption {
   color: ghostwhite;
+  display: block;
   font-family: 'EB Garamond', serif;
   font-size: 1em;
   line-height: 1.222em;
@@ -52,7 +48,7 @@ figcaption {
   padding-right: 10%;
 }
 video {
-  border: 0.5em outset teal;
+  border: 0.2em outset teal;
   border-radius: 3em;
   margin-bottom: 5%;
   margin-left: 8%;
@@ -307,9 +303,26 @@ blockquote {
 }
 @media screen and (min-width: 600px) {
   html {
-    font-size: 1.333em;
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 850px) {
-  
+  #name2 {
+    padding-bottom: 1%;
+  }
+  #name3 {
+    padding-bottom: 1%;
+  }
+  h2 {
+    padding-bottom: 1%;
+  }
+  article p  {
+    padding-bottom: 1%;
+  }
+  figcaption {
+    padding-bottom: 1%;
+  }
+  img {
+    max-width: 50%;
+  }
 }
