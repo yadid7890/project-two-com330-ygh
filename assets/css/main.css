@@ -390,3 +390,9 @@ a[href="#main-nav"] {
     padding-right: 10%;
   }
 }
+@media screen and (min-width: 1400px) {
+  a[href="#main-nav"] {
+    padding-left: 68%;
+    font-size: 0.9em;
+  }
+}
