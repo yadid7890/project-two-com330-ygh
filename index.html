@@ -37,7 +37,7 @@
           eight years old.</p>
           <figure id="chicago-photo">
             <img src="assets/img/chicago-neighborhoods-616x800px.jpg"
-            alt="Image of the neighborhoods in chicago." class="center" />
+            alt="Image of the neighborhoods in chicago." />
             <figcaption>
               The image shows the different neighborhoods in Chicago. I've lived in the south side
               my whole life &mdash; Brighton Park, Back of the Yards, and Fuller Park.
@@ -51,7 +51,7 @@
             Illinois Institute of Technology in Chicago, IL.</p>
             <figure id="iit-photo">
               <img src="assets/img/ILTECH_1524x800.jpg"
-              alt="Overview image of Illinoic Tech's campus in Chicago." class="center" />
+              alt="Overview image of Illinoic Tech's campus in Chicago." />
               <figcaption>
                 I completed my higher education at Illinois Tech in Chicago.
               </figcaption>
@@ -190,7 +190,12 @@
                     instances.</p>
                     <!--image of me-->
                     <figure id="me-photo">
-                      <img src="assets/img/photo-of-me-600x800.jpg"
+                      <img
+                      srcset=" assets/img/photo-of-me-1500x2000.jpg 1500w,
+                      assets/img/photo-of-me-1000x1333.jpg 1000w,
+                      assets/img/photo-of-me-500x667.jpg 500w"
+                      sizes="(min-width:1000px) 50vw, (min-width:360px) 80vw"
+                      src="assets/img/photo-of-me-600x800.jpg"
                       alt="Image of me looking incredibly cute." />
                       <figcaption>
                         An elegant image of me taken at the Spring 2018 IPRO fair.
